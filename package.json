@@ -2,7 +2,7 @@
   "name": "sweets_foodies",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://SEELA-VENKATA-NAGA-DEVESH.github.io/sweets_foodie",
+  "homepage": "https://SEELA-VENKATA-NAGA-DEVESH.github.io/sweets_foodies",
   "dependencies": {
     "axios": "^1.7.9",
     "body-parser": "^1.20.3",
