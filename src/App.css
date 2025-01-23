@@ -1,0 +1,445 @@
+/* Root Variables for Dark Theme */
+:root {
+  --primary-bg: #000000; /* Black Background */
+  --card-bg: #1C1C1C;    /* Dark Gray for Cards */
+  --text-light: #FFFFFF; /* White Text */
+  --text-secondary: #E0E0E0; /* Off-White Text */
+  --primary-red: #FF4C4C; /* Red Accent */
+  --primary-gold: #FFC107; /* Gold Accent */
+  --primary-green: #00C853; /* Green Accent */
+  --primary-blue: #2979FF; /* Blue Accent */
+  --button-gradient: linear-gradient(145deg, #FFC107, #FF4C4C);
+}
+
+/* Universal Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-light);
+  background: var(--primary-bg);
+  overflow-x: hidden;
+}
+
+/* Header */
+.header {
+  background: var(--card-bg);
+  color: var(--text-light);
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Menu Grid */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card */
+.card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9);
+}
+
+/* Card Image */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid var(--primary-red);
+}
+
+/* Card Content */
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 24px;
+  color: var(--primary-gold);
+}
+
+.card-content p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+.card-content p span {
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+
+/* Quantity Selector */
+.card select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-gold);
+  margin: 10px 0;
+  width: 100%;
+  background: var(--card-bg);
+  color: var(--text-light);
+}
+
+/* Buttons */
+.card button {
+  background: var(--button-gradient);
+  color: var(--text-light);
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card button:hover {
+  background: var(--primary-gold);
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.5);
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+/* In App.css or separate styles file */
+.order-now-btn,
+.confirm-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.order-now-btn {
+  background: #f44336;
+  color: #fff;
+}
+
+.confirm-btn {
+  background: #4caf50;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Basic Styles */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sweet-item {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.sweet-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.order-btn {
+  background-color: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.order-btn:hover {
+  background-color: #e68900;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  width: 400px;
+}
+
+.popup-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.confirm-btn, .close-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.close-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background-color: #45a049;
+}
+
+.close-btn:hover {
+  background-color: #e53935;
+}
+
+/* Fade-in animation for the popup */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9); /* Black with high opacity for the overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Popup content */
+.popup-content {
+  background: black; /* Black background for the popup */
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4); /* Subtle white glow */
+  border: 2px solid rgba(255, 255, 255, 0.8); /* White glowing border */
+  animation: glow 2s infinite alternate; /* Glow animation */
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Popup text */
+.popup-text {
+  color: #fff; /* White text for better readability */
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Popup title */
+.popup-title {
+  color: #f8f8f8; /* Slightly off-white for titles */
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glow effect for title */
+}
+
+/* Popup field */
+.popup-field {
+  margin: 10px 0;
+  text-align: left;
+}
+
+/* Popup label */
+.popup-label {
+  color: #ccc; /* Light gray for labels */
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Popup input */
+.popup-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 14px;
+  background: #222; /* Dark input background */
+  color: #fff; /* White text for inputs */
+}
+
+/* Popup select */
+.popup-select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 5px;
+  background: #222; /* Dark background */
+  color: #fff; /* White text for selects */
+}
+
+/* Confirm button */
+.confirm-btn {
+  background: #28a745; /* Green */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.confirm-btn:hover {
+  background: #218838; /* Darker green */
+  box-shadow: 0 0 10px rgba(40, 167, 69, 0.8); /* Green glow on hover */
+}
+
+/* Close button */
+.close-btn {
+  background: #dc3545; /* Red */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.close-btn:hover {
+  background: #c82333; /* Darker red */
+  box-shadow: 0 0 10px rgba(220, 53, 69, 0.8); /* Red glow on hover */
+}
+
+/* Popup image */
+.popup-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glow effect for the image */
+}
+
+/* Animation for glowing border */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
