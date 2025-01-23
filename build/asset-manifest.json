@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/sweets_foodies/static/css/main.a17d2d83.css",
+    "main.js": "/sweets_foodies/static/js/main.428c496c.js",
+    "static/js/488.05d7bd86.chunk.js": "/sweets_foodies/static/js/488.05d7bd86.chunk.js",
+    "static/media/jalebi.jpg": "/sweets_foodies/static/media/jalebi.ab2811c329f6f8126cae.jpg",
+    "static/media/laddu.jpg": "/sweets_foodies/static/media/laddu.a5775ca8457dbea7acdb.jpg",
+    "static/media/Ariselu (or) Attaraselu.jpg": "/sweets_foodies/static/media/Ariselu (or) Attaraselu.7f2b70bac7ccfbd9df83.jpg",
+    "static/media/Ghee Ariselu (or) Attaraselu.jpg": "/sweets_foodies/static/media/Ghee Ariselu (or) Attaraselu.7f2b70bac7ccfbd9df83.jpg",
+    "index.html": "/sweets_foodies/index.html",
+    "main.a17d2d83.css.map": "/sweets_foodies/static/css/main.a17d2d83.css.map",
+    "main.428c496c.js.map": "/sweets_foodies/static/js/main.428c496c.js.map",
+    "488.05d7bd86.chunk.js.map": "/sweets_foodies/static/js/488.05d7bd86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a17d2d83.css",
+    "static/js/main.428c496c.js"
+  ]
+}
